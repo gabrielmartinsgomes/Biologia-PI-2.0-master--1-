@@ -1,0 +1,309 @@
+@charset "utf-8";
+
+/* Formatação das Letras */
+
+.paragrafo {
+  line-height: 1cm;
+  margin-top: 2cm;
+  margin-left: 130px;
+  text-align: justify;
+  font-size: 30px;
+  color: #212121;
+  }
+  
+  #titulo { 
+  font-size: 80px;
+  margin-left: 130px;
+  margin-top: 0px;
+  text-align: left;
+  color: #212121;
+  }
+  
+/* Formatação do Conteudo do Index */
+
+#texto {
+  margin-top: 100px;
+  height: 350px;
+  width: 50%;
+  }
+  
+#imagem {
+  width: 850px;
+  height: 700px;
+  margin-left: 910px;
+  left: 40px; top: 130px; 
+  position: absolute;
+  }
+
+#index {
+  height: calc(100vh - 70px);
+}
+
+#section2 {
+  background-color: white;
+  margin-top: 0px;
+}
+
+#section3 {
+  background-color: #e7e7e7;
+  margin-top: 0px;
+}
+
+h1, p {
+  margin-left: 100px;
+  margin-right: 110px;
+}
+
+.curiosidade{
+  font-size: 50px;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  color: #212121;
+}
+
+#quemsomos{
+  color: #212121;
+  text-align: center;
+  font-size: 50px;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+.texto{
+  text-align: justify;
+  font-size: 30px;
+  padding-bottom: 100px;
+  color: #212121;
+}
+
+#historia {
+  padding-bottom: 10px; 
+}
+
+/* Botão Para Ir Pro Inicio */
+
+#saiba-btn {
+  top: 30px;
+  letter-spacing: 2px;
+  border: 2px solid;
+  border-color: #212121;
+  border-radius: 4rem;
+  padding: 10px;
+  background-color: #212121;
+  margin-left: 150px;
+  color: #e7e7e7;
+  font-size: 15px;
+  position: relative;
+  transition: .55s;
+}
+
+#saiba-btn:hover {
+  transform: rotate(10px);
+  background-color: #e7e7e7;
+  color: #212121;
+}
+
+/* Botão Para Voltar Pra Capa */
+
+#btn-volta {
+  width: 40px;
+  height: 40px;
+  z-index: 10001;
+  position: relative;
+  color: white;
+  font-size: 25px;
+  bottom: 40px;
+  margin: auto;
+  transition: .55s;
+}
+
+.luz {
+  display: block;
+}
+
+.escuro {
+  display: none;
+}
+
+/* Quem Somos */
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  background: #333;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+
+#testimonials {
+  background: #e7e7e7;
+  color: #e7e7e7;
+  padding: 50px;
+}
+
+#testimonials-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.testimonial .testimonial-image {
+  height: 200px;
+  width: auto;
+  border-radius: 50%;
+  margin: 15px;
+}
+
+#quemsomos{
+  color: #212121;
+  text-align: center;
+  font-size: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Dark Mode */
+
+.dark .luz {
+  display: none;
+}
+
+.dark .escuro {
+  display: block;
+}
+
+.dark #index {
+  background-color: white;
+}
+
+.dark #section2 {
+  background-color: black;
+}
+
+.dark #section3 {
+  background-color: #212121;
+}
+
+.dark .texto{
+  color: #e7e7e7;
+}
+
+.dark .curiosidade, #quemsomos {
+  color: #e7e7e7;
+}
+
+.dark #body {
+  background-color: #274360;
+
+}
+
+.dark #pessoas {
+  background: #212121;
+  color: #212121;
+}
+
+.dark #testimonials {
+  background: #212121;
+}
+
+.dark #quemsomos {
+  color: #e7e7e7;
+}
+
+
+
+/* Responsividade */
+
+@media (max-width: 2100px)  {
+  .imagem {
+    width: 40%;
+    height: 60%;
+    margin-left: 750px;
+    left: 40px; top: 150px; position: absolute;
+    }
+}
+
+@media (max-width: 1900px)  {
+  .imagem {
+    width: 40%;
+    height: 60%;
+    margin-left: 750px;
+    left: 40px; top: 150px; position: absolute;
+    }
+}
+
+@media (max-width: 1700px)  {
+  .imagem {
+    width: 40%;
+    height: 60%;
+    margin-left: 750px;
+    left: 40px; top: 150px; position: absolute;
+    }
+}
+
+@media (max-width: 1560px)  {
+  .imagem {
+    width: 40%;
+    height: 60%;
+    margin-left: 750px;
+    left: 40px; top: 150px; position: absolute;
+    }
+}
+
+@media (max-width: 1400px)  {
+  .imagem {
+    width: 40%;
+    height: 60%;
+    margin-left: 750px;
+    left: 40px; top: 150px; position: absolute;
+    }
+}
+
+@media (max-width: 1200px)  {
+  .imagem {
+    width: 40%;
+    height: 60%;
+    margin-left: 750px;
+    left: 40px; top: 150px; position: absolute;
+    }
+}
+
+@media (max-width: 1024px)  {
+  .imagem {
+    width: 40%;
+    height: 60%;
+    margin-left: 750px;
+    left: 40px; top: 150px; position: absolute;
+    }
+}
+
+@media (max-width: 850px)  {
+  .imagem {
+    width: 40%;
+    height: 60%;
+    margin-left: 750px;
+    left: 40px; top: 150px; position: absolute;
+    }
+}
+
+@media (max-width: 768px)  {
+  .imagem {
+    width: 40%;
+    height: 60%;
+    margin-left: 750px;
+    left: 40px; top: 150px; position: absolute;
+    }
+}
+
+@media (max-width: 480px)  {
+  .imagem {
+    width: 40%;
+    height: 60%;
+    margin-left: 750px;
+    left: 40px; top: 150px; position: absolute;
+    }
+}
