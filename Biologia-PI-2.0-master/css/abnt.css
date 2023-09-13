@@ -54,3 +54,7 @@
   #strong {
     color: black;
   }
+
+  .dark #strong {
+    color: #e7e7e7;
+  }

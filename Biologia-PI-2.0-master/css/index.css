@@ -14,7 +14,7 @@
   #titulo { 
   font-size: 80px;
   margin-left: 130px;
-  margin-top: 0px;
+  margin-top: 200px;
   text-align: left;
   color: #212121;
   }
@@ -37,11 +37,13 @@
 
 #index {
   height: calc(100vh - 70px);
+  overflow: auto;
 }
 
 #section2 {
   background-color: white;
   margin-top: 0px;
+  overflow: auto;
 }
 
 #section3 {
@@ -192,7 +194,11 @@ h1, p {
   color: #e7e7e7;
 }
 
-.dark .curiosidade, #quemsomos {
+.dark #quemsomos {
+  color: #e7e7e7;
+}
+
+.dark .curiosidade {
   color: #e7e7e7;
 }
 
