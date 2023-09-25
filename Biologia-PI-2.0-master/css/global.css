@@ -1,3 +1,7 @@
+*{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 html {
   scroll-behavior: smooth ;
 }
@@ -16,7 +20,8 @@ main {
 background-color: white;
 box-shadow: 20px 20px #8bbad1;
 border: black;
-margin: 0px 70px 20px 70px;
+margin: auto;
+width: 1200px;
 }
 
 :root {
@@ -70,10 +75,10 @@ gap: .5rem;
   gap: .5rem;
   letter-spacing: 2.5px;
   position: absolute;
-  width: 92.35%;
+  width: 1200px;
   top: 70px;
   right: 0px;
-  left: 70px;
+  left: 0px;
   background: #e7e7e7;
   box-shadow: 0px 20px 5px 0px rgba(0, 0, 0, 0.3);
   opacity: 0.98;
@@ -82,6 +87,7 @@ gap: .5rem;
   height: 0px;
   visibility: hidden;
   overflow-y: hidden;
+  margin: auto;
   }
 
 #menu a {
@@ -93,7 +99,7 @@ border-bottom: 2px solid rgba(0, 0, 0, .05);
 
 #nav.active #menu {
 display: block;
-height: calc(100vh - 70px);
+height: calc(45vh - 70px);
 visibility: visible;
 overflow-y: auto;
 }
@@ -215,95 +221,4 @@ overflow-y: hidden;
 #nav.ativo #calzone::after {
   transform: rotate(-135deg);
   top: -7px;
-}
-
-  /* Dark theme */
-
-#light {
-  display: block;
-}
-
-#dark {
-  display: none;
-  width: 24px;
-  height: 24px;
-}
-
-input[type="checkbox"] {
-display: none;
-}
-
-.bi {
-  font-size: 1.3rem;
-  cursor: pointer;
-}
-
-.bi-moon {
-  display: none;
-}
-
-.dark #light {
-  display: none;
-}
-
-.dark #dark {
-  display: block;
-}
-
-.dark,
-.dark header {
-  background-color: #274360;
-  color: #fff;
-}
-
-.dark .bi-sun {
-  display: none;
-}
-
-.dark .bi-moon {
-  display: block;
-}
-
-.dark #light {
-  display: none;
-}
-
-.dark #dark {
-  display: block;
-}
-
-.dark #header {
-  box-shadow: 0px 20px 5px 0px rgba(0, 0, 0, 0.3);
-  background-color: #212121;
-  color: #fff;
-}
-
-.dark main {
-  background-color: #212121;
-  box-shadow: 20px 20px rgba(0, 0, 0, 0.3);
-}
-
-.dark #logo {
-  color: #e7e7e7;
-}
-
-.dark #hamburger {
-  color: #e7e7e7;
-}
-
-.dark #calzone {
-  color: #e7e7e7;
-}
-.dark #menu {
-  background: #212121;
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
-}
-
-.dark #busca {
-  background: #212121;
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
-}
-
-.dark a {
-  color: #e7e7e7;
 }

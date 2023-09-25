@@ -1,5 +1,133 @@
 @charset "utf-8";
 
+#main-index {
+  background-color: white;
+  box-shadow: 20px 20px #8bbad1;
+  border: black;
+  margin: auto;
+  width: 92.35%;
+}
+
+#header-index {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 20px 5px 0px rgba(0, 0, 0, 0.3);
+  background: #e7e7e7;
+  }
+  
+  #nav-index {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  }
+
+  /* Botão da Navegação */ 
+
+#menu-index {
+  display: block;
+  list-style: none;
+  text-align: center;
+  gap: .5rem;
+  letter-spacing: 2.5px;
+  position: absolute;
+  width: 92.35%;
+  top: 70px;
+  right: 0px;
+  left: 70px;
+  background: #e7e7e7;
+  box-shadow: 0px 20px 5px 0px rgba(0, 0, 0, 0.3);
+  opacity: 0.98;
+  transition: .6s;
+  z-index: 1000;
+  height: 0px;
+  visibility: hidden;
+  overflow-y: hidden;
+  }
+
+#menu-index a {
+display: block;
+padding: 1rem 0;
+margin: 0 1rem;
+border-bottom: 2px solid rgba(0, 0, 0, .05);
+}
+
+#nav-index.active #menu-index {
+display: block;
+height: calc(45vh - 70px);
+visibility: visible;
+overflow-y: auto;
+}
+
+#nav-index.active #hamburger {
+  border-top-color: transparent;
+  }
+  
+  #nav-index.active #hamburger::before {
+  transform: rotate(135deg);
+  }
+  
+  #nav-index.active #hamburger::after {
+  transform: rotate(-135deg);
+  top: -7px;
+  }
+
+  #busca-index {
+    display: block;
+    list-style: none;
+    text-align: center;
+    gap: .5rem;
+    letter-spacing: 2.5px;
+    position: absolute;
+    width: 92.35%;
+    top: 70px;
+    right: 0px;
+    left: 70px;
+    background: #e7e7e7;
+    box-shadow: 0px 20px 5px 0px rgba(0, 0, 0, 0.3);
+    opacity: 0.98;
+    transition: .6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+    }
+    
+    #busca-index a {
+      display: block;
+      padding: 1rem 0;
+      margin: 0 1rem;
+      border-bottom: 2px solid rgba(0, 0, 0, .05);
+    }
+    
+    #nav-index.ativo #busca-index {
+      display: block;
+      height: calc(50vh - 70px);
+      visibility: visible;
+      overflow-y: auto;
+    }
+    
+    #nav-index.ativo #lupa {
+      display: none;
+    }
+    
+#nav-index.ativo #calzone {
+  display: block;
+  border-top-color: transparent;
+}
+
+#nav-index.ativo #calzone::before {
+  transform: rotate(135deg);
+}
+
+#nav-index.ativo #calzone::after {
+  transform: rotate(-135deg);
+  top: -7px;
+}
+
 /* Formatação das Letras */
 
 .paragrafo {
@@ -108,9 +236,10 @@ h1, p {
 /* Botão Para Voltar Pra Capa */
 
 #btn-volta {
+  display: block;
   width: 40px;
   height: 40px;
-  z-index: 10001;
+  z-index: 1001;
   position: relative;
   color: white;
   font-size: 25px;
@@ -119,13 +248,6 @@ h1, p {
   transition: .55s;
 }
 
-.luz {
-  display: block;
-}
-
-.escuro {
-  display: none;
-}
 
 /* Quem Somos */
 
@@ -167,60 +289,6 @@ h1, p {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
-/* Dark Mode */
-
-.dark .luz {
-  display: none;
-}
-
-.dark .escuro {
-  display: block;
-}
-
-.dark #index {
-  background-color: white;
-}
-
-.dark #section2 {
-  background-color: black;
-}
-
-.dark #section3 {
-  background-color: #212121;
-}
-
-.dark .texto{
-  color: #e7e7e7;
-}
-
-.dark #quemsomos {
-  color: #e7e7e7;
-}
-
-.dark .curiosidade {
-  color: #e7e7e7;
-}
-
-.dark #body {
-  background-color: #274360;
-
-}
-
-.dark #pessoas {
-  background: #212121;
-  color: #212121;
-}
-
-.dark #testimonials {
-  background: #212121;
-}
-
-.dark #quemsomos {
-  color: #e7e7e7;
-}
-
-
 
 /* Responsividade */
 

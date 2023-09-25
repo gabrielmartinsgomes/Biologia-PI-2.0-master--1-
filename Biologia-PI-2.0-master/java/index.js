@@ -1,17 +1,16 @@
-
-const btnMobile = document.getElementById('btn-mobile');
+const btnMobilee = document.getElementById('btn-mobile');
 
 function toggleMenu() {
-  const nav = document.getElementById('nav');
+  const nav = document.getElementById('nav-index');
   nav.classList.toggle('active');
 }
 
 btnMobile.addEventListener('click', toggleMenu);
 
-const btnBusca = document.getElementById('btn-busca');
+const btnBuscaa = document.getElementById('btn-busca');
 
 function toggleBusca() {
-  const nav = document.getElementById('nav');
+  const nav = document.getElementById('nav-index');
   nav.classList.toggle('ativo');
 }
 
