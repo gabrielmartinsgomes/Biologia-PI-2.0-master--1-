@@ -222,3 +222,76 @@ overflow-y: hidden;
   transform: rotate(-135deg);
   top: -7px;
 }
+
+/* "Rodapé" Sessão */
+
+#bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background-image: linear-gradient(to left, #cdeaf8 , #8bbad1, #8bbad1, #8bbad1, #cdeaf8);
+  padding: 50px;
+  height: 600px;
+  flex-wrap: wrap;
+}
+
+.itens-bottom {
+  height: 500px;
+  width: 250px;
+}
+
+.catalunha-bottom {
+  height: 500px;
+  width: 500px;
+}
+
+.info-bottom {
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: 400px;
+  width: 300px;
+}
+
+#titulo-bottom{
+  font-size: 35px;
+  margin: 50px 0 45px 0;
+  color: #212121;
+}
+
+.par-bottom {
+  margin-top: 10px;
+  padding: 2px;
+  font-size: 25px;
+  color: #212121;
+}
+
+.par-bottom:hover {
+  transition: all 0.5s ease-in-out;
+  border-bottom: 3.5px solid  #274360;;
+}
+
+#img-catalunha{
+  height: 500px;
+  width: 500px;
+}
+
+.itens-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  margin-top: 20px;
+  width: 250px;
+  height: 150px;
+  border-radius: 5px;
+  background-color: #212121;
+  border: 2px solid #8bbad1;
+  color: #212121;
+}
+
+.itens-social:hover {
+  transition: all 0.1s ease-in-out;
+  border: 5px solid  #274360;;
+}
