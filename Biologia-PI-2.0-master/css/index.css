@@ -54,6 +54,10 @@ margin: 0 1rem;
 border-bottom: 2px solid rgba(0, 0, 0, .05);
 }
 
+#menu-index a:hover{
+  background-color: rgba(0, 0, 0, .05);
+}
+
 #nav-index.active #menu-index {
 display: block;
 height: calc(45vh - 70px);
@@ -134,12 +138,12 @@ overflow-y: auto;
   margin-top: 2cm;
   margin-left: 130px;
   text-align: justify;
-  font-size: 30px;
+  font-size: 25px;
   color: #212121;
   }
   
   #titulo { 
-  font-size: 80px;
+  font-size: 65px;
   margin-left: 130px;
   margin-top: 200px;
   text-align: left;
@@ -150,14 +154,14 @@ overflow-y: auto;
 
 #texto {
   margin-top: 100px;
-  height: 350px;
-  width: 50%;
+  height: 400px;
+  width: 40%;
   }
   
 #imagem {
   width: 850px;
   height: 700px;
-  margin-left: 910px;
+  margin-left: 800px;
   left: 40px; top: 130px; 
   position: absolute;
   }
@@ -232,22 +236,6 @@ h1, p {
   background-color: #e7e7e7;
   color: #212121;
 }
-
-/* Botão Para Voltar Pra Capa */
-
-#btn-volta {
-  display: block;
-  width: 40px;
-  height: 40px;
-  z-index: 1001;
-  position: relative;
-  color: white;
-  font-size: 25px;
-  top: 20px;
-  margin: auto;
-  transition: .55s;
-}
-
 
 /* Quem Somos */
 

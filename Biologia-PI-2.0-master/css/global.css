@@ -40,9 +40,6 @@ text-decoration: none;
 font-family: sans-serif;
 }
 
-a:hover {
-background-color: rgba(0, 0, 0, .05);
-}
 
 #logo {
 font-size: 1.5rem;
@@ -95,6 +92,10 @@ display: block;
 padding: 1rem 0;
 margin: 0 1rem;
 border-bottom: 2px solid rgba(0, 0, 0, .05);
+}
+
+#menu a:hover{
+  background-color: rgba(0, 0, 0, .05);
 }
 
 #nav.active #menu {
@@ -160,10 +161,10 @@ text-align: center;
 gap: .5rem;
 letter-spacing: 2.5px;
 position: absolute;
-width: 92.35%;
+width: 1200px;
 top: 70px;
 right: 0px;
-left: 70px;
+left: 0px;
 background: #e7e7e7;
 box-shadow: 0px 20px 5px 0px rgba(0, 0, 0, 0.3);
 opacity: 0.98;
@@ -172,6 +173,7 @@ z-index: 1000;
 height: 0px;
 visibility: hidden;
 overflow-y: hidden;
+margin: auto;
 }
 
 #busca a {
@@ -233,48 +235,45 @@ overflow-y: hidden;
   background-image: linear-gradient(to left, #cdeaf8 , #8bbad1, #8bbad1, #8bbad1, #cdeaf8);
   padding: 50px;
   height: 600px;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .itens-bottom {
   height: 500px;
   width: 250px;
+  margin: 6px;
+  color: transparent;
 }
 
-.catalunha-bottom {
+
+.info-bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  text-align: left;
+
   height: 500px;
   width: 500px;
 }
 
-.info-bottom {
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  height: 400px;
-  width: 300px;
-}
-
 #titulo-bottom{
   font-size: 35px;
-  margin: 50px 0 45px 0;
+  margin: 20px 0 45px 0;
   color: #212121;
 }
 
 .par-bottom {
-  margin-top: 10px;
+  margin: 10px 0 0 0;
   padding: 2px;
-  font-size: 25px;
+  font-size: 20px;
   color: #212121;
 }
 
 .par-bottom:hover {
   transition: all 0.5s ease-in-out;
-  border-bottom: 3.5px solid  #274360;;
-}
-
-#img-catalunha{
-  height: 500px;
-  width: 500px;
+  background-color: #274360;
+  color: white;
 }
 
 .itens-social {
@@ -289,9 +288,31 @@ overflow-y: hidden;
   background-color: #212121;
   border: 2px solid #8bbad1;
   color: #212121;
+  color: transparent;
 }
 
 .itens-social:hover {
   transition: all 0.1s ease-in-out;
   border: 5px solid  #274360;;
+}
+
+#btn-button{
+  display: flex;
+  align-items: flex-start;
+  margin-top: 75px;
+}
+
+/* Botão Para Voltar Pra Capa */
+
+#btn-volta {
+  display: block;
+  width: 40px;
+  height: 40px;
+  z-index: 1001;
+  position: relative;
+  color: white;
+  font-size: 25px;
+  top: 20px;
+  margin: auto;
+  transition: .55s;
 }
