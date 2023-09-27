@@ -60,7 +60,7 @@ border-bottom: 2px solid rgba(0, 0, 0, .05);
 
 #nav-index.active #menu-index {
 display: block;
-height: calc(45vh - 70px);
+height: calc(48vh - 70px);
 visibility: visible;
 overflow-y: auto;
 }
