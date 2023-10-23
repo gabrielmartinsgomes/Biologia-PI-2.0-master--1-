@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+  p {
+    margin-bottom: 2cm;
+    line-height: 1cm;
+    margin-right: 2cm;
+    margin-left: 3cm;
+    font-size: 15pt;
+    text-align: justify;
+    line-height:1cm;
+    text-indent: 20px;
+    
+  }
+
+  h1 {
+    margin-right: 2cm;
+    margin-left: 3cm;
+    font-size: 36px;
+    text-align: left;
+    margin-top: 3cm;
+  }
+  
+  h2 {
+    margin-right: 2cm;
+    margin-left: 3cm;
+    font-size: 10pt;
+    text-align: left;
+    line-height: 1cm;
+  }
+
+  .referencia {
+    line-height: 1cm;
+    margin-right: 2cm;
+    margin-left: 3cm;
+    text-align: justify;
+    line-height:1cm;
+    
+  }
+
+  .img-abnt {
+    display: block;
+    margin: auto;
+    width: 35vw;
+    height: 35vh;
+  }
+  .p-abnt {
+    font-size: 12pt;
+    text-align: center;
+  }
+
+  strong {
+    color: transparent;
+  }
+
+  #strong {
+    color: black;
+  }
+
+  .dark #strong {
+    color: #e7e7e7;
+  }
