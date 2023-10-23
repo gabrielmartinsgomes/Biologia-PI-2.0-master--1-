@@ -4,14 +4,17 @@ body, ul {
     padding: 0px;
   }
 
+* {
+  background-color: white;
+}
+
 body {
-  background-color: #cdeaf8;
+  background-color: #ffffff;
   height: 100vh;
 }
 
 main {
   background-color: white;
-  box-shadow: 20px 20px #8bbad1;
   border: black;
   margin: 0px 70px 20px 70px;
 }
@@ -312,4 +315,34 @@ input[type="checkbox"] {
 
 .dark a {
   color: #e7e7e7;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  #menu {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  #busca {
+    margin: 0px 70px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  main {
+    margin: 0;
+  }
+  #menu {
+    margin: 0;
+    width: 100%;
+    top: 70px;
+    right: 0;
+    height: auto;
+  }
+  #busca {
+    margin: 0;
+    width: 100%;
+    top: 70px;
+    right: 0;
+    height: auto;
+  }
 }

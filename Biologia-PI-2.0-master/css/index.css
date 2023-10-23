@@ -7,6 +7,10 @@
   width: 92.35%;
 }
 
+body {
+  background-color: white !important;
+}
+
 #header-index {
   box-sizing: border-box;
   height: 70px;
@@ -169,6 +173,7 @@ overflow-y: auto;
 #index {
   height: calc(100vh - 70px);
   overflow: auto;
+  width: 100%;
 }
 
 #section2 {
@@ -244,15 +249,16 @@ h1, p {
   align-items: center;
   font-size: 1.2rem;
   background: #333;
-  padding: 15px;
+  padding: 0px;
   margin: 15px 0;
   border-radius: 5px;
+  width: 100%;
 }
 
 #testimonials {
   background: #e7e7e7;
   color: #e7e7e7;
-  padding: 50px;
+  padding: 10px;
 }
 
 #testimonials-container {
@@ -280,92 +286,109 @@ h1, p {
 
 /* Responsividade */
 
-@media (max-width: 2100px)  {
-  .imagem {
-    width: 40%;
-    height: 60%;
-    margin-left: 750px;
-    left: 40px; top: 150px; position: absolute;
-    }
+@media (max-width: 1440px) {
+  #imagem {
+    width: 500px;
+    height: 680px;
+  }
 }
 
-@media (max-width: 1900px)  {
-  .imagem {
-    width: 40%;
-    height: 60%;
-    margin-left: 750px;
-    left: 40px; top: 150px; position: absolute;
-    }
+@media (max-width: 1026px) {
+  #imagem {
+    width: 50%;
+    display: none;
+  }
+
+  #texto {
+    width: 50%;
+  }
+  
+  .paragrafo {
+    font-size: 20px;
+  }
+
+  #titulo {
+    font-size: 50px;
+  }
+
+  .curiosidade {
+    font-size: 40px;
+  }
+  .testimonial {
+    flex-direction: column; 
+    align-items: center; 
+    font-size: 14px;  
+  }
+  
+  .testimonial .testimonial-image {
+    margin: 10px 0; 
+  }
 }
 
-@media (max-width: 1700px)  {
-  .imagem {
-    width: 40%;
-    height: 60%;
-    margin-left: 750px;
-    left: 40px; top: 150px; position: absolute;
-    }
+
+@media (max-width: 768px) {
+  #imagem {
+    width: 100%;
+    margin: 0;
+    position: relative;
+  }
+
+  #texto {
+    width: 100%;
+    margin-left: 0;
+  }
+  .testimonial {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .testimonial .testimonial-image {
+    margin: 10px 0;
+  }
+
+  .testimonial p {
+    font-size: 16px;
+  }
 }
 
-@media (max-width: 1560px)  {
-  .imagem {
-    width: 40%;
-    height: 60%;
-    margin-left: 750px;
-    left: 40px; top: 150px; position: absolute;
-    }
-}
+@media (max-width: 425px) {
+  #imagem {
+    display: none;
+  }
 
-@media (max-width: 1400px)  {
-  .imagem {
-    width: 40%;
-    height: 60%;
-    margin-left: 750px;
-    left: 40px; top: 150px; position: absolute;
-    }
-}
+  #section3 {
+    padding: 10px;
+    font-size: 0.3em;
+  }
 
-@media (max-width: 1200px)  {
-  .imagem {
-    width: 40%;
-    height: 60%;
-    margin-left: 750px;
-    left: 40px; top: 150px; position: absolute;
-    }
-}
+  #texto {
+    width: 100%; 
+  }
 
-@media (max-width: 1024px)  {
-  .imagem {
-    width: 40%;
-    height: 60%;
-    margin-left: 750px;
-    left: 40px; top: 150px; position: absolute;
-    }
-}
+  .paragrafo {
+    font-size: 16px;
+  }
 
-@media (max-width: 850px)  {
-  .imagem {
-    width: 40%;
-    height: 60%;
-    margin-left: 750px;
-    left: 40px; top: 150px; position: absolute;
-    }
-}
+  #titulo {
+    font-size: 40px;
+  }
 
-@media (max-width: 768px)  {
-  .imagem {
-    width: 40%;
-    height: 60%;
-    margin-left: 750px;
-    left: 40px; top: 150px; position: absolute;
-    }
-}
+  .curiosidade {
+    font-size: 30px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 
-@media (max-width: 480px)  {
-  .imagem {
-    width: 40%;
-    height: 60%;
-    margin-left: 750px;
-    left: 40px; top: 150px; position: absolute;
+  .testimonial > p {
+    font-size: 1.4em;
+  }
+
+  .testimonial {
+    flex-direction: column; 
+    align-items: center;  
     }
+  
+  .testimonial .testimonial-image {
+    margin: 10px 0; 
+  }
 }

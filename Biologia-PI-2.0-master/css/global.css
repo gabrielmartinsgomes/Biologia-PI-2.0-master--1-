@@ -12,16 +12,8 @@ body, ul {
 }
 
 body {
-background-color: #cdeaf8;
+background-color: #ffffff;
 height: 100vh;
-}
-
-main {
-background-color: white;
-box-shadow: 20px 20px #8bbad1;
-border: black;
-margin: auto;
-width: 1200px;
 }
 
 :root {
@@ -318,4 +310,16 @@ list-style: none;
   top: 20px;
   margin: auto;
   transition: .55s;
+}
+
+@media (max-width: 424px) {
+  body {
+    font-size: 12px;
+  }
+  #menu {
+    display: none;
+  }
+  #estuda {
+    margin: 0.2rem;
+  }
 }
