@@ -43,8 +43,8 @@
     width: 35vw;
     height: 35vh;
   }
-  .p-abnt {
-    font-size: 12pt;
+  .p {
+    font-size: 12em;
     text-align: center;
   }
 
@@ -58,4 +58,49 @@
 
   .dark #strong {
     color: #e7e7e7;
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    #menu {
+      margin-left: 70px;
+      margin-right: 70px;
+    }
+    #busca {
+      margin: 0px 70px;
+    }
+    p{
+      font-size: 1.5em;
+    }
+  }
+  
+  @media (min-width: 426px) and (max-width: 768px) {
+    main {
+      margin: 0;
+    }
+    #menu {
+      margin: 0;
+      width: 100%;
+      top: 70px;
+      right: 0;
+      height: auto;
+    }
+    #busca {
+      margin: 0;
+      width: 100%;
+      top: 70px;
+      right: 0;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 424px) {
+    body {
+      font-size: 12px;
+    }
+    #menu {
+      display: none;
+    }
+    #estuda {
+      margin: 0.2rem;
+    }
   }

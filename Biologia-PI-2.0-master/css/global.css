@@ -64,7 +64,7 @@ gap: .5rem;
   gap: .5rem;
   letter-spacing: 2.5px;
   position: absolute;
-  width: 1200px;
+  width: 100%;
   top: 70px;
   right: 0px;
   left: 0px;
@@ -76,7 +76,6 @@ gap: .5rem;
   height: 0px;
   visibility: hidden;
   overflow-y: hidden;
-  margin: auto;
   }
 
 #menu a {
@@ -92,7 +91,7 @@ border-bottom: 2px solid rgba(0, 0, 0, .05);
 
 #nav.active #menu {
 display: block;
-height: calc(48vh - 70px);
+height: calc(55vh - 70px);
 visibility: visible;
 overflow-y: auto;
 }
@@ -153,7 +152,7 @@ text-align: center;
 gap: .5rem;
 letter-spacing: 2.5px;
 position: absolute;
-width: 1200px;
+width: 100%;
 top: 70px;
 right: 0px;
 left: 0px;
@@ -165,7 +164,6 @@ z-index: 1000;
 height: 0px;
 visibility: hidden;
 overflow-y: hidden;
-margin: auto;
 }
 
 #busca a {
@@ -177,7 +175,7 @@ margin: auto;
 
 #nav.ativo #busca {
   display: block;
-  height: calc(50vh - 70px);
+  height: calc(55vh - 70px);
   visibility: visible;
   overflow-y: auto;
 }
@@ -310,16 +308,4 @@ list-style: none;
   top: 20px;
   margin: auto;
   transition: .55s;
-}
-
-@media (max-width: 424px) {
-  body {
-    font-size: 12px;
-  }
-  #menu {
-    display: none;
-  }
-  #estuda {
-    margin: 0.2rem;
-  }
 }

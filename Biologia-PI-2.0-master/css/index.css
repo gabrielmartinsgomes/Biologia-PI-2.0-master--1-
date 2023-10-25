@@ -37,7 +37,7 @@ body {
   gap: .5rem;
   letter-spacing: 2.5px;
   position: absolute;
-  width: 92.35%;
+  width: 100%;
   top: 70px;
   right: 0px;
   left: 70px;
@@ -64,7 +64,7 @@ border-bottom: 2px solid rgba(0, 0, 0, .05);
 
 #nav-index.active #menu-index {
 display: block;
-height: calc(48vh - 70px);
+height: calc(55vh - 70px);
 visibility: visible;
 overflow-y: auto;
 }
@@ -89,7 +89,7 @@ overflow-y: auto;
     gap: .5rem;
     letter-spacing: 2.5px;
     position: absolute;
-    width: 92.35%;
+    width: 100%;
     top: 70px;
     right: 0px;
     left: 70px;
@@ -112,7 +112,7 @@ overflow-y: auto;
     
     #nav-index.ativo #busca-index {
       display: block;
-      height: calc(50vh - 70px);
+      height: calc(55vh - 70px);
       visibility: visible;
       overflow-y: auto;
     }
